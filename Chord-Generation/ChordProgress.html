@@ -43,14 +43,7 @@
                         </select>   
                 </td>
                 <td>
-                    <label for = "lengthOfProgression">Select Length</label>
-                    <select name = "lengthOfProgression" id = "selectLength">
-                        <option value = "3">3</option>
-                        <option value = "4">4</option>
-                    </select>
-                </td>
-                <td>
-                    <label for="chordType">Chord Type:</label>
+                    <label for="chordType">First Chord Type:</label>
                         <select id="chordType">
                             <option value="Major">Major</option>
                             <option value="Minor">Minor</option>
@@ -62,24 +55,19 @@
                         </select>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <label>Inversions?</label>
-                    <input type = "checkbox" id = "inversions?">
-                </td>
-                <td>
-                    <p>placeholder</p>
-                </td>
-            </tr>
         </tbody>
-    </table>   
-    
-    <button type = "submit" onclick = "generateChord()" id = "generateButton">Create Progresssion</button>
-    <button onclick = "hideAndShowElements()" id = "hideButton">hide</button>
-    <div id = "hidden">
-    <div id = "forDeleting">   
-        <div id = "musicStaff"></div>
+    </table>  
+
+    <div id = "center">
+        <button type = "submit" onclick = "generateChord()" id = "generateButton">Create Progresssion</button>
+        <!--<button onclick = "hideAndShowElements()" id = "hideButton">Hide</button>-->
+        <button onclick = "replace()" id = "removeButton">Remove All</button>
     </div>
+    
+    <div id = "hidden">
+        <div id = "forDeleting">  
+            <div id = "musicStaff"></div>
+        </div>
     </div>
 
     <script src = "scripting.js"></script>

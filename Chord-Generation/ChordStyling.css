@@ -1,9 +1,34 @@
-#tableHeader{
+body header h1{
 
+    color:antiquewhite;
+    background-color: rgb(98, 109, 139);
+    padding: 1.3vw;
+    text-align: center;
+}
+aside{
+    
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    border-width: .4vw;
+    border-radius: 1.75vw;
+}
+
+#tableHeader{
     padding-bottom: 5%;
 }
 
 table{
-
+    margin-top: 3vh;
     margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
